@@ -2,68 +2,331 @@ body {
   color: #ffffff; }
 
 .wrapper {
-  margin: 20px;
-  display: grid;
+  padding: 0px;
+  margin: 0px;
   width: 100%;
+  display: inline-block; }
+
+a {
+  text-decoration: none; }
+
+p {
+  color: #000; }
+
+h1 {
+  color: #000; }
+
+ol {
+  list-style: none; }
+
+.top {
+  display: inline-block;
+  width: 100%; }
+
+.logo1 {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px 0 0 50px; }
+
+nav {
+  display: inline-block;
+  width: 80%;
+  vertical-align: middle;
+  padding-top: 15px;
+  padding-left: 520px; }
+
+.knopki {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; }
+  .knopki button {
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px; }
+
+button:hover {
+  background-color: #ddd;
+  color: black; }
+
+button.active {
+  background-color: dodgerblue;
+  color: white; }
+
+* {
+  box-sizing: border-box; }
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-top: 20px; }
+
+/* Hide the images by default */
+.mySlides {
+  display: none; }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none; }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center; }
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; }
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+.about.active {
+  background-color: #717171; }
+
+.about.dot:hover {
+  background-color: #717171; }
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+.niz {
+  display: grid;
   grid-gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  /* Style the accordion panel. Note: hidden by default */ }
-  .wrapper .logo1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2; }
-  .wrapper p {
-    color: #000; }
-  .wrapper ol {
-    list-style: none; }
-  .wrapper .lang {
-    text-align: center; }
-  .wrapper .home {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-    padding: 20px 0px 0px 0px; }
-  .wrapper .about {
-    grid-column: 4 / 5;
-    grid-row: 1 / 2;
-    padding: 20px 0px 0px 0px; }
-  .wrapper .contact {
-    grid-column: 5 / 6;
-    grid-row: 1 / 2;
-    padding: 20px 0px 0px 0px; }
-  .wrapper .slideshow-container {
-    grid-column: 1 / 6;
-    grid-row: 2; }
-  .wrapper h1 {
-    color: #000; }
-  .wrapper .niz {
-    grid-column: 2 / 3;
-    grid-row: 5 / 6;
-    text-align: center; }
-  .wrapper .companytext {
-    grid-column: 1 / 6;
-    grid-row: 6 / 7; }
-  .wrapper .accordion {
-    grid-column: 1/3;
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s; }
-  .wrapper .active, .wrapper .accordion:hover {
-    background-color: #ccc; }
-  .wrapper .panel {
-    grid-column: 3/6;
-    padding: 0 18px;
-    background-color: #ebdede;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #fff;
+  color: #444; }
+  .niz .a {
+    grid-column: 1 / span 2;
+    padding-left: 50px;
+    display: none; }
+  .niz .b {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    padding-left: 148px; }
+  .niz .c {
+    grid-column: 1;
+    grid-row: 2;
+    padding-left: 30px; }
+  .niz .d {
+    grid-column: 2;
+    grid-row: 2;
+    padding-left: 30px; }
+  .niz .social {
+    display: none; }
+  .niz .myForm {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-gap: .8em;
+    background: beige;
+    padding: 1.2em; }
+  .niz .name {
+    grid-row-start: 1;
+    grid-row-end: 2; }
+  .niz .email {
+    grid-row-start: 2;
+    grid-row-end: 3; }
+  .niz .comments {
+    grid-row-start: 3;
+    grid-row-end: 4; }
+  .niz .ten {
+    padding-right: 10px; }
+  .niz .twelve {
+    padding-right: 20px; }
+  .niz .submit {
+    padding-top: 10px; }
+  .niz .question {
+    padding-bottom: 10px; }
+
+.niz1 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #fff;
+  color: #444; }
+  .niz1 .a {
+    grid-column: 1 / span 2;
+    padding-left: 50px; }
+  .niz1 .b {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    padding-left: 165px; }
+    .niz1 .b input {
+      size: 300px; }
+  .niz1 .c {
     display: none;
-    overflow: hidden; }
-  .wrapper .sb {
-    grid-column: 4/5;
-    padding: 15px 0px 0px 0px; }
+    grid-column: 2;
+    grid-row: 2;
+    padding-left: 50px; }
+  .niz1 .d {
+    display: none;
+    grid-column: 1;
+    grid-row: 2; }
+  .niz1 .social {
+    display: none; }
+  .niz1 .myForm {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-gap: .8em;
+    background: beige;
+    padding: 1.2em; }
+    .niz1 .myForm input {
+      size: 300px; }
+  .niz1 input[type=text] {
+    width: 200px; }
+  .niz1 input {
+    size: 300px; }
+  .niz1 .name {
+    grid-row-start: 1;
+    grid-row-end: 2; }
+  .niz1 .email {
+    grid-row-start: 2;
+    grid-row-end: 3; }
+  .niz1 .comments {
+    grid-row-start: 3;
+    grid-row-end: 4; }
+  .niz1 .ten {
+    padding-right: 10px; }
+  .niz1 .twelve {
+    padding-right: 20px; }
+  .niz1 .submit {
+    padding-top: 10px; }
+  .niz1 .question {
+    padding-bottom: 10px; }
+
+.text22 {
+  padding-top: 5px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px; }
+  .text22 p {
+    display: inline; }
+
+.niz2 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #fff;
+  color: #444; }
+  .niz2 .a {
+    grid-column: 1 / span 2;
+    padding-left: 50px;
+    display: none; }
+  .niz2 .b {
+    grid-column: 2/ span 2;
+    grid-row: 1 / span 2;
+    padding-left: 165px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 10px; }
+  .niz2 .c {
+    grid-column: 1;
+    grid-row: 1;
+    padding-left: 100px;
+    width: 96%; }
+  .niz2 .d {
+    grid-column: 3;
+    grid-row: 2;
+    width: 60%;
+    padding-left: 50px; }
+  .niz2 .myForm {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-gap: .8em;
+    background: beige;
+    padding: 8.2em; }
+  .niz2 .name {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2; }
+  .niz2 .email {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2; }
+  .niz2 .comments {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    size: 150%; }
+  .niz2 .ten {
+    padding-right: 10px; }
+  .niz2 .twelve {
+    padding-right: 20px; }
+  .niz2 .submit {
+    padding-top: 10px; }
+  .niz2 .question {
+    padding-bottom: 10px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2; }
 
 body {
   color: #ffffff; }

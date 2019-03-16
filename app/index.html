@@ -6,87 +6,86 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel ="stylesheet" href="css/style.css">
+    <script src="js/js.js"></script>
     
 </head>
 <body>
         <div class="wrapper">			
-                
+                <div class = "top">
                         <div class="logo1">
                                     <a href="#"><img src="img/logo.png" alt="Лого"></a>
                         </div>	
-                        
-                                <div class = "home"><a  href= "#">Home</a> </div>                              
-                                <div class = "about"><a href= "#">About us</a></div>
-                                <div class = "contact"><a href= "#">Contact us</a></div>            
-                                
-                        
-                       
-                                <div class="slideshow-container">
-                                        <!-- Full-width images with number and caption text -->
-                                        <div class="mySlides fade">
-                                            
-                                            <img src="img/ponchiki111.jpg" style="width:100%" alt="fail">
-                                            
-                                        </div>
-                                
-                             
-                                    </div>
-                                                                                                      
-                                                                   
-                                <!--div class="img"><img src="img/ponchiki1.jpg" alt ="office"/></div-->                       
-                                          
-                            
-                            <!--div class="slide slide-2">                                          
-                                <div class="img"><img src="img/ponchiki1.jpg"/></div>                                            
+                       <nav>
+                        <div class="knopki">	                                
+                                <div class="home"><button onclick="one()" >Home</button></div>
+                                <div class="about"><button onclick="two()">About us</button></div>
+                                <div class ="contact"><button onclick="three()">Contact us</button><div>
                             </div>
-                            <div class="slide slide-3">                                          
-                                <div class="img"><img src="img/ponchiki2.jpg"/></div>                                            
-                            </div>  >                              
-                        </div-->
-                      
-                               
-               
-                <div class = "niz">
-                    <h1>Company</h1></div>
-                      <div class="companytext">
-                            <p>BP.UA помогает соискателям найти достойную работу, а работодателям
-             - качественно и в срок подбирать персонал.</p>
-                        </div>
-                
-
-                        <button class="accordion">Section 1</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<button class="accordion">Section 2</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-        
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-              panel.style.display = "none";
-            } else {
-              panel.style.display = "block";
-            }
-          });
-        }
-        </script>
                         
-                        <div class="sb">
-                                            
-                                <img src="img/logo1.png" style="width:100%" alt="fail">
-                                
-                            </div>         
-        </div>
-    
+                    </nav> 
+                </div>
+
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="img1_wide.jpg" style="width:100%">
+                      <div class="text">Успех</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="img2_wide.jpg" style="width:100%">
+                      <div class="text">Стабильность</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="img3_wide.jpg" style="width:100%">
+                      <div class="text">Надежность</div>
+                    </div>
+                  
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                  <br>
+                  
+                  <!-- The dots/circles -->
+                  <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                  </div>
+                  
+                 
+
+<div class = "niz" id="nizID">
+
+    <div class="a"><p id="demo">oLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolorensequat. Duist in culpa qui officia deserunt mollit anim id est laborum<p id="demo1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p></p></div>
+  <div class="b"><form class=”myForm”>
+    <div class ="question"><div class="twelve"><label for=”customer_name”>Ask a Question </label></div></div>
+    <div class ="name"><div class="twelve"><label for=”customer_name”>Name </label></div>
+    <input type=”text”  name=”customer_name” id=”customer_name” required></div>
+    <div class ="email"><div class="twelve"><label for=”email_address”>Email </label></div>
+    <input type=”email” name=”email_address” id=”email_address” ></div>
+    <div class ="commentss"><div class ="ten"><label for=”comments”>Comments</label></div>
+    <input type=”comments” id=”comments” ></div>
+    <div class="submit"><button>Submit</button></div>
+    </form></div>
+  <div class="c"><img src="img/img3_wide.jpg" style="width:100%"></div>
+  <div class="d"><img src="img/img4_wide.jpg" style="width:120%"></div> 
+</div>
+
+
+
+
+<div class = "text22">
+    <h1>Zagolovok</h1>
+    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
+</div>
+
+         </div>           
 </body>
 </html>
