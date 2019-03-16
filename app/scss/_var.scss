@@ -2,6 +2,38 @@ body{
     color: #ffffff;
 }
 
+@mixin sample {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #fff;
+    color: #444;
+
+.myForm {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-gap: .8em;
+    background: beige;
+    padding: 8.2em;    
+    }
+    .a {
+        grid-column: 1 / span 2;
+        padding-left: 50px;
+    }
+
+
+.submit{
+    padding-top: 10px;
+}
+
+.question{
+    padding-bottom: 10px;   
+}
+}
+
 .wrapper{	
     padding: 0px;
     margin:0px;    
@@ -168,15 +200,8 @@ button:hover {
 
 
 .niz {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: #fff;
-    color: #444;
-
-.a {
-    grid-column: 1 / span 2;
-    padding-left: 50px;
+    @include sample;
+.a {    
     display: none;
 }
 .b {
@@ -186,84 +211,26 @@ button:hover {
 }
 .c {
     grid-column: 1 ;
-    grid-row: 2 ;
+    grid-row: 2;
     padding-left: 30px;
     
 }
 .d {
     grid-column: 2 ;
-    grid-row: 2 ;
+    grid-row: 2;
     padding-left: 30px;
-}
-
-.social{
-    display: none;
-}
-.myForm {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-flow: row;
-    grid-gap: .8em;
-    background: beige;
-    padding: 1.2em;
-    
-    }
-.name{
-    grid-row-start: 1;
-    grid-row-end: 2;
-  
-}
-
-.email{
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.comments{
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-
-.ten{
-    padding-right: 10px;
-}
-
-.twelve{
-    padding-right: 20px;
-}
-
-
-
-.submit{
-    padding-top: 10px;
-}
-
-.question{
-    padding-bottom: 10px;
 }
 }
 
 
 .niz1 {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: #fff;
-    color: #444;
+    @include sample;
 
-.a {
-    grid-column: 1 / span 2;
-    padding-left: 50px;
-}
 .b {
     grid-column: 3 ;
     grid-row: 1 / span 2;
-    padding-left: 165px;
-    input{
-        size: 300px;
-    }
+    padding-left: 115px;
+    
 }
 .c {
     display: none;
@@ -276,104 +243,18 @@ button:hover {
     grid-column: 1 ;
     grid-row: 2 ;
 }
-
-.social{
-    display: none;
 }
-
-
-.myForm {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-flow: row;
-    grid-gap: .8em;
-    background: beige;
-    padding: 1.2em;
-    input{
-        size: 300px;
-    }
-    }
-
-input[type=text]{
-   width:200px;
-}
-
-
-    input{
-        size: 300px;
-    }
-.name{
-    grid-row-start: 1;
-    grid-row-end: 2;
-    
-}
-
-.email{
-    grid-row-start: 2;
-    grid-row-end: 3;
-    
-}
-
-.comments{
-    grid-row-start: 3;
-    grid-row-end: 4;
-    
-}
-
-.ten{
-    padding-right: 10px;
-}
-
-.twelve{
-    padding-right: 20px;
-}
-
-
-
-.submit{
-    padding-top: 10px;
-}
-
-.question{
-    padding-bottom: 10px;
-    
-}
-}
-
-
-.text22{
-    padding-top: 5px;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    p{
-    display: inline;    
-    }
-}
-
 
 .niz2 {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: #fff;
-    color: #444;
-
-.a {
-    grid-column: 1 / span 2;
-    padding-left: 50px;
+   @include sample;
+   .a {    
     display: none;
 }
 .b {
     grid-column: 2/ span 2 ;
     grid-row: 1 / span 2;
-    padding-left: 165px;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 10px;
-    
+    padding-left: 165px;    
+    padding-top: 10px;    
 }
 .c {
     grid-column: 1 ;
@@ -387,59 +268,14 @@ input[type=text]{
     width: 60%;
     padding-left: 50px;
 }
-
-
-.myForm {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-flow: row;
-    grid-gap: .8em;
-    background: beige;
-    padding: 8.2em;
-  
-    
-    }
-.name{
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
-  
 }
 
-.email{
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-.comments{
-    grid-row-start: 3;
-    grid-row-end: 4;
-    size: 150%;
-}
-
-.ten{
+.text22{
+    padding-top: 5px;
+    text-align: center;
+    padding-left: 10px;
     padding-right: 10px;
-}
-
-.twelve{
-    padding-right: 20px;
-}
-
-
-.submit{
-    padding-top: 10px;
-}
-
-.question{
-    padding-bottom: 10px;    
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
+    p{
+    display: inline;    
+    }
 }
